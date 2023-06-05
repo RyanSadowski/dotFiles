@@ -18,17 +18,7 @@ alias knxnuget="cd ~/Dev/knx.infrastructure"
 alias clearLogstashLock="rm /usr/local/Cellar/logstash-full/7.17.4/libexec/data/.lock"
 alias config="vim ~/.bash_profile"
 alias boop="source ~/.bash_profile"
-alias killgp="sudo /Applications/GlobalProtect.app/Contents/Resources/uninstall_gp.sh"
-alias fb="cd ~/Dev/freightbox-monorepo"
 
-alias ampoff="sudo launchctl unload /Library/LaunchDaemons/com.cisco.amp* && sudo launchctl unload /Library/LaunchDaemons/com.cisco.endpoint.orbital.plist && sudo killall cisco"
-alias ampon="sudo launchctl load /Library/LaunchDaemons/com.cisco.*"
-
-alias onedriveoff="sudo launchctl unload /Library/LaunchDaemons/com.microsoft.OneDr*"
-alias onedriveon="sudo launchctl load /Library/LaunchDaemons/com.microsoft.OneDr*"
-
-alias gpoff="sudo launchctl unload /Library/LaunchDaemons/com.paloalto*"
-alias gpon="sudo launchctl load /Library/LaunchDaemons/com.paloalto*"
 
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -62,8 +52,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 #source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
 #source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
 
-fortune | cowsay |lolcat
-
 # .NET Core
 export PATH="$PATH:/Users/$USER/.dotnet/tools"
 
@@ -71,18 +59,4 @@ export PATH="$PATH:/Users/$USER/.dotnet/tools"
 export PATH="$PATH:/usr/local/bin"
 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+fortune | cowsay |lolcat
