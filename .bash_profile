@@ -1,23 +1,15 @@
 alias fu="git add -A && git commit -m '🙃' && git push"
 alias ll="ls -lrtha"
 alias dev="cd ~/Dev"
-alias drivers="cd ~/Dev/core/drivers"
-alias carriers="cd ~/Dev/core/carriers"
-alias fuel="cd ~/Dev/core/fuel"
-alias loads="cd ~/Dev/core/loads"
-alias core="cd ~/Dev/core"
-alias hekla="cd ~/Dev/hekla"
 alias pgup="brew services start postgresql"
 alias pgdown="brew services stop postgresql"
 alias pg="psql postgres"
 alias mgup="brew services start mongodb-community"
 alias mgdown="brew services stop mongodb-community"
 
-alias knxnpm="cd ~/Dev/knx.infrastructure-npm"
-alias knxnuget="cd ~/Dev/knx.infrastructure"
 alias clearLogstashLock="rm /usr/local/Cellar/logstash-full/7.17.4/libexec/data/.lock"
 alias config="vim ~/.bash_profile"
-alias boop="source ~/.bash_profile"
+alias boop="source ~/.bash_profile && tmux source ~/.config/tmux/tmux.conf"
 
 
 
@@ -58,5 +50,6 @@ export PATH="$PATH:/Users/$USER/.dotnet/tools"
 # Added by Toolbox App
 export PATH="$PATH:/usr/local/bin"
 
+tmux source ~/.config/tmux/tmux.conf
 
 fortune | cowsay |lolcat
