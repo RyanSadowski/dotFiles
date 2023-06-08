@@ -36,7 +36,7 @@ local diff = {
 
 lualine.setup({
     options = {
-        theme = 'nord',
+        theme = 'catppuccin', --'nord',
         disabled_filetypes = { "dashboard", "Outline" }
     },
     sections = {

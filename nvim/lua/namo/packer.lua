@@ -17,6 +17,8 @@ return require('packer').startup(function(use)
     --colors
     use 'shaunsingh/nord.nvim'
     use 'tiagovla/tokyodark.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
+
 
     use { "gregorias/nvim-mapper",
         config = function() require "nvim-mapper".setup {} end,
